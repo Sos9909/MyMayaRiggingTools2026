@@ -4,7 +4,7 @@ string $installerPath = `substring $installFileInfo 25 999`; //getting the path 
 string $pluginDir = `dirname $installerPath`;
 
 string $srcDir = $pluginDir + "/src/";
-string $toolsDir = $srcDir + "/tools";
+string $toolsDir = $srcDir + "/tools/";
 string $assetDir = $pluginDir + "/assets/";
 string $defaultIconName = "default.png";
 
@@ -41,4 +41,5 @@ global proc AddPluginToShelf(string $scriptName, string $label)
 }
 
 AddPluginToShelf("limbRigger", "Limb Rigger");
+AddPluginToShelf("mayaToUE", "Maya To UE");
 
